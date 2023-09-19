@@ -31,7 +31,7 @@ class Footer extends Component {
             <div class="container">
                 <div class="level">
                     <div class="level-start">
-                        
+                        Wake the fuck up, Samurai. We have a city to burn.
                     </div>
                     <div class="level-end">
                         {Object.keys(links).length ? <div class="field has-addons">

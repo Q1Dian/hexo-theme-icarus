@@ -127,16 +127,6 @@ body
         background-color: $blue
         cut-corner-reverse(16px)
 
-    &:after
-        content: 'R' counter(card)
-        position: absolute
-        color: $blue
-        right: 2rem
-        bottom: -.6em
-        font-size: .75rem
-        padding: 0 .25em
-        background: $body-background-color
-
     .card-image
         cut-corner-top-right(16px)
 
@@ -209,9 +199,15 @@ clip-button($color, $color-invert)
 .tags.has-addons
     .tag:first-child
         background: $yellow !important
+        color: $yellow-invert
+        font-weight: bold
+        font-size: 13px
 
     .tag:last-child
         background: $blue !important
+        color: $blue-invert
+        font-weight: bold
+        font-size: 13px
 
 .pagination-previous, .pagination-next, .pagination-link
     cut-corner(8px)
