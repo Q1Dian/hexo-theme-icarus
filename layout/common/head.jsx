@@ -63,7 +63,7 @@ module.exports = class extends Component {
         } else if (article && article.highlight && article.highlight.theme) {
             hlTheme = article.highlight.theme;
         } else {
-            hlTheme = 'atom-one-light';
+            hlTheme = 'base16-dracula';
         }
 
         if (typeof page.og_image === 'string') {

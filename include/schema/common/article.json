@@ -11,7 +11,7 @@
                 "theme": {
                     "type": "string",
                     "description": "Code highlight themes\nhttps://github.com/highlightjs/highlight.js/tree/master/src/styles",
-                    "default": "atom-one-light",
+                    "default": "base16-dracula",
                     "nullable": true
                 },
                 "clipboard": {
