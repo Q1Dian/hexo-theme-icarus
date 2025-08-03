@@ -27,3 +27,13 @@ require('../include/config')(hexo);
  * Register Hexo extensions and remove Hexo filters that could cause OOM
  */
 require('../include/register')(hexo);
+
+hexo.extend.filter.register('before_post_render', function(data) {
+  data.content = data.content.replace(
+    /\{([^}]+)\}\(([^)]+)\)/g,
+    function(match, text, footnote) {
+      return `<span class="dfoot" data-footnote="${footnote}">${text}</span>`;
+    }
+  );
+  return data;
+});
