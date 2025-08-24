@@ -1,6 +1,8 @@
-const logger = require('hexo-log')();
+const createLogger = require('hexo-log');
 const { Component } = require('inferno');
 const view = require('hexo-component-inferno/lib/core/view');
+
+const logger = createLogger.default();
 
 module.exports = class extends Component {
     render() {
@@ -11,7 +13,7 @@ module.exports = class extends Component {
             return null;
         }
 
-        return <div class="card">
+        return <div class="card" id="comments">
             <div class="card-content">
                 <h3 class="title is-5">{__('article.comments')}</h3>
                 {(() => {
