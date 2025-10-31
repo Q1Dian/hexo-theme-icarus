@@ -35,7 +35,7 @@ module.exports = class extends Component {
     return (
       <Fragment>
         <h1 class="title" style={{ textAlign: 'center' }}>{page.title || 'Diary'}</h1>
-
+        <h5>Replaces social media for me. </h5>
         {sortedDates.map(day => (
           <div class="card" key={day}>
             <div class="card-content">
